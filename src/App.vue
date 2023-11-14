@@ -2,13 +2,16 @@
   <div id="main" class="m-0 p-0">
     <HeaderSection />
     <router-view />
+    <FooterSection />
   </div>
 </template>
 <script>
 import HeaderSection from '@/components/modules/headerSection.vue'
+import FooterSection from '@/components/modules/footerSection.vue'
 export default ({
   components: {
-    HeaderSection
+    HeaderSection,
+    FooterSection
   },
   setup () {
 
@@ -17,26 +20,4 @@ export default ({
 </script>
 
 <style lang="scss">
-#main {
-  font-family: 'cubic-11';
-  text-align: center;
-  background: black;
-  max-width: 1920px;
-  margin-left: auto;
-  margin-right: auto;
-  overflow-x: hidden;
-}
-
-nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
 </style>
