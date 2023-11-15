@@ -4,11 +4,11 @@
       <img src="@/assets/img/cat6.png" alt="">
     </div>
     <div class="flex flex-wrap">
-      <div class="w-1/2 px-8 h-full">
-        <div class="border border-shadow p-10">
+      <div class="w-full lg:w-1/2 px-4 md:px-8 h-full mb-10 lg:mb-0">
+        <div class="border border-shadow p-6 md:p-10">
           <p class="proj-text-primary text-2xl font-bold mb-4">立翰最新動向</p>
           <div class="item flex mb-8">
-            <div class="pr-12">
+            <div class="pr-12 hidden md:block">
               <p class="text-xs proj-text-primary font-bold">2023.12.26 </p>
               <div class="">
                 <img src="@/assets/img/news1.png" alt="">
@@ -20,7 +20,7 @@
             </div>
           </div>
           <div class="item flex mb-8">
-            <div class="pr-12">
+            <div class="pr-12 hidden md:block">
               <p class="text-xs proj-text-primary font-bold">2023.12.24 </p>
               <div class="">
                 <img src="@/assets/img/news2.png" alt="">
@@ -32,7 +32,7 @@
             </div>
           </div>
           <div class="item flex">
-            <div class="pr-12">
+            <div class="pr-12 hidden md:block">
               <p class="text-xs proj-text-primary font-bold">2023.12.20 </p>
               <div class="">
                 <img src="@/assets/img/news3.png" alt="">
@@ -45,15 +45,15 @@
           </div>
         </div>
       </div>
-      <div class="w-1/2">
-        <div class="border border-shadow p-10">
+      <div class="w-full lg:w-1/2 px-4 md:px-8">
+        <div class="border border-shadow p-6 md:p-10">
           <p class="proj-text-primary text-2xl font-bold mb-4">邀請您一起為社會更進一步心力</p>
           <p class="proj-text-primary font-bold opacity-50">感謝您願意了解目前台灣所發生的事情，如果您認同並支持我們的想法及理念，<br/>歡迎您捐款支持我們的團隊，也歡迎向我們提出任何您的想法及建議。。</p>
         </div>
         <div class="">
           <img src="@/assets/img/cat7.png" alt="">
         </div>
-        <div class="border border-shadow p-10 flex justify-between mb-8">
+        <div class="border border-shadow p-6 md:p-10 flex justify-between mb-8">
           <div class="flex items-center">
             <div class="">
               <img src="@/assets/img/hand2.png" alt="">
@@ -64,7 +64,7 @@
             <img src="@/assets/img/hand.png" alt="">
           </div>
         </div>
-        <div class="border border-shadow p-10 flex justify-between">
+        <div class="border border-shadow p-6 md:p-10 flex justify-between">
           <div class="flex items-center">
             <div class="">
               <img src="@/assets/img/hand2.png" alt="">
@@ -73,12 +73,13 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="flex w-full justify-end">
-      <div class="px-4 py-4">
-        <img src="@/assets/img/arrow.png" alt="">
+      <div class="flex w-full justify-end px-8">
+        <div class="px-4 py-4">
+          <img src="@/assets/img/arrow.png" alt="">
+        </div>
       </div>
     </div>
+
   </div>
 </template>
 <script>

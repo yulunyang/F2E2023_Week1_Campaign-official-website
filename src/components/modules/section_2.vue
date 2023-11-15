@@ -1,12 +1,12 @@
 <template>
-  <div class="section2">
-    <div class="flex justify-center items-center container mx-auto h-full max-w-8xl">
-      <div class="w-2/5 people2">
+  <div class="section2 py-32 md:py-0 px-4 overflow-hidden h-full flex items-center">
+    <div class="flex flex-wrap justify-center items-center container mx-auto h-full max-w-8xl">
+      <div class="w-full md:w-2/5 people2 order-2 md:order-1">
         <img src="@/assets/img/people2.png" alt="">
       </div>
-      <div class="w-3/5">
+      <div class="w-full md:w-3/5 order-1 md:order-2">
         <p class="proj-text-third text-2xl opacity-25 mb-0">Who am I</p>
-        <div class="signName mb-3">
+        <div class="signName mb-3 px-3">
           <img src="@/assets/img/signName.png" alt="" class="border-b">
         </div>
 
@@ -27,11 +27,14 @@ export default({
 
 <style lang="scss" scoped>
   .section2 {
-    height: calc(100vh - 56px);
+    min-height: calc(100vh - 70px);
     width: 100%;
     background-image: url('~@/assets/img/cat_hand1.png'), url('~@/assets/img/cat_hand2.png'), url('~@/assets/img/cat_hand3.png'), url('~@/assets/img/cat_hand4.png'), url('~@/assets/img/footlabel.png');
     background-position: left top, right top, left bottom, right bottom, right 10% bottom -20%;
     background-repeat: no-repeat;
     // background-size: contain;
+    @media screen and (max-width: 768px) {
+      background-size: 20%;
+    }
   }
 </style>

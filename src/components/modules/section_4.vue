@@ -21,7 +21,7 @@ export default({
 
 <style lang="scss" scoped>
   .section4 {
-    height: calc(100vh - 56px);
+    height: calc(100vh - 70px);
     width: 100%;
     background-image: url('~@/assets/img/cat4.png'), url('~@/assets/img/cat5.png');
     background-position: left 20% top 20%, right 20% bottom 20%;

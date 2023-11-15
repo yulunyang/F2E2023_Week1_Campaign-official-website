@@ -1,5 +1,5 @@
 <template>
-  <footer class="w-full proj-bg-primary p-4">
+  <footer class="w-full proj-bg-primary p-4 overflow-hidden">
     <div class="container mx-auto py-10 md:py-12 flex flex-wrap">
       <div class="w-full md:w-1/2 flex flex-wrap mb-8">
         <p class="text-white text-7xl md:text-8xl font-bold mr-12 mb-6 md:mb-0">喵?</p>

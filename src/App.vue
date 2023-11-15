@@ -20,4 +20,10 @@ export default ({
 </script>
 
 <style lang="scss">
+#main {
+  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-family: 'Noto Sans SC', sans-serif;
+  font-family: 'Noto Sans TC', sans-serif;
+}
 </style>

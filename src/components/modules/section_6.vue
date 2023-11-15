@@ -1,10 +1,10 @@
 <template>
   <div class="section6">
-    <div class="max-w-3xl mx-auto">
+    <div class="max-w-3xl mx-auto px-4">
       <div class="flex justify-between items-center">
         <div></div>
-        <p class="text-5xl font-bold proj-text-primary">服務信箱</p>
-        <div class="">
+        <p class="text-3xl md:text-5xl font-bold proj-text-primary">服務信箱</p>
+        <div class="w-2/5 md:w-auto">
           <img src="@/assets/img/mailbox2.png" alt="">
         </div>
       </div>
@@ -32,7 +32,7 @@
                 <textarea name="" id="" cols="25" rows="10" class="proj-border-secondary text-sm appearance-none border rounded w-full py-3 px-3 textColorDarkBlack leading-tight focus:outline-none focus:border-gray-900"></textarea>
               </div>
             </div>
-            <div class="flex justify-between items-center">
+            <div class="flex justify-between items-center flex-wrap">
               <div class="flex items-center">
                 <div class="flex items-center mr-3">
                   <label class="block text-sm proj-text-primary font-bold whitespace-nowrap mr-2" for="code">驗證碼 :</label>
@@ -46,13 +46,13 @@
                   <a href="" class="proj-texr-fifth whitespace-nowrap text-xs">換一張</a>
                 </div>
               </div>
-              <div>
+              <div class="w-full md:w-auto mt-6 md:mt-0">
 
                 <button
-                class="block w-full select-none rounded proj-bg-primary py-3 px-16 text-center align-middle text-xs font-bold uppercase text-white shadow-md transition-all"
-                type="button"
-                data-ripple-light="true"
-                >信件送出
+                  class="block w-full select-none rounded proj-bg-primary py-3 px-16 text-center align-middle text-xs font-bold uppercase text-white shadow-md transition-all"
+                  type="button"
+                  data-ripple-light="true"
+                  >信件送出
               </button>
               </div>
             </div>
@@ -75,7 +75,7 @@ export default({
 
 <style lang="scss" scoped>
   .section6 {
-    // height: calc(100vh - 56px);
+    // height: calc(100vh - 70px);
     width: 100%;
   }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div id="main">
+  <div id="home">
     <Section1 />
     <Section2 />
     <Section3 />
@@ -33,7 +33,8 @@ import Section6 from '@/components/modules/section_6.vue'
 </script>
 
 <style lang="scss">
-  #main {
-    margin-top: 56px;
+  #home {
+    margin-top: 70px;
+    overflow: hidden;
   }
 </style>
