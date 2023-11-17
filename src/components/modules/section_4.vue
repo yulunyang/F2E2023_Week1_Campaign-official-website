@@ -4,7 +4,7 @@
       <p class="mr-20">台灣的明天</p>
       <div class="relative">
         <p>喵先鋪路</p>
-        <div class="absolute foot">
+        <div class="absolute foot" data-aos="fade-up-right" data-aos-offset="200">
           <img src="@/assets/img/foot.png" alt="">
         </div>
       </div>

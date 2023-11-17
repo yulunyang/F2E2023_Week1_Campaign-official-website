@@ -1,7 +1,8 @@
 <template>
-  <header class="navigation w-full flex items-center shadow-md fixed">
-    <div class="container mx-auto flex justify-between items-center px-3">
-      <div class="flex items-center">
+  <header class="header fixed top-0 left-0 w-full z-50 proj-text-primary">
+    <nav class="container mx-auto py-3">
+      <div class="flex justify-between items-center">
+        <div class="flex items-center px-3">
           <p class="proj-text-primary whitespace-nowrap">競選倒數：</p>
           <div class="flex-col justify-center items-center mx-3">
             <p class="proj-text-primary font-semibold">40</p>
@@ -16,59 +17,33 @@
             <p class="proj-text-secondary text-xs">MIN</p>
           </div>
         </div>
-      <nav>
-        <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
-        <ul class="nav-list">
-          <li><a href="https://2022.thef2e.com/login" target="_blank" class="py-2 px-3 inline-flex items-center justify-center mr-3 cursor-pointer text-sm tracking-wider proj-text-primary">委員介紹</a></li>
-          <li><a href="https://2022.thef2e.com/login" target="_blank" class="py-2 px-3 inline-flex items-center justify-center mr-3 cursor-pointer text-sm tracking-wider proj-text-primary">競選主張</a></li>
-          <li><a href="https://2022.thef2e.com/login" target="_blank" class="py-2 px-3 inline-flex items-center justify-center mr-3 cursor-pointer text-sm tracking-wider proj-text-primary">最新消息</a></li>
+        <ul class="site-nav w-full lg:w-auto" :class="{ 'site-nav--open': isOpen}">
+          <li><a href="#" target="_blank" class="link block py-4 md:py-3 px-3 items-center justify-center mr-3 cursor-pointer tracking-wider">委員介紹</a></li>
+          <li><a href="#" target="_blank" class="link block py-4 md:py-3 px-3 items-center justify-center mr-3 cursor-pointer tracking-wider">競選主張</a></li>
+          <li><a href="#" target="_blank" class="link block py-4 md:py-3 px-3 items-center justify-center mr-3 cursor-pointer tracking-wider">最新消息</a></li>
           <li>
-            <a href="https://2022.thef2e.com/login" target="_blank" class="py-2 px-3 flex items-center justify-center button mr-3 cursor-pointer text-sm tracking-wider rounded-3xl text-white">小額捐款
+            <a href="#" target="_blank" class="py-4 md:py-3 px-3 inline-flex items-center justify-center button mr-3 cursor-pointer text-sm tracking-wider rounded-3xl text-white">小額捐款
               <img src="@/assets/img/heart.png" alt="heart" class="ml-2">
             </a>
           </li>
           <li>
-            <a href="https://2022.thef2e.com/login" target="_blank" class="py-2 px-3 inline-flex items-center justify-center button mr-3 cursor-pointer text-sm tracking-wider rounded-3xl text-white">服務信箱
+            <a href="#" target="_blank" class="py-4 md:py-3 px-3 inline-flex items-center justify-center button mr-3 cursor-pointer text-sm tracking-wider rounded-3xl text-white">服務信箱
               <img src="@/assets/img/mailbox.png" alt="mailbox" class="ml-2">
             </a>
           </li>
-          <!-- <li><a href="#!">About</a></li> -->
-          <!-- <li class="dropdown"><a href="#!">Services</a>
-              <ul class="nav-dropdown">
-                <li><a href="https://2022.thef2e.com/login" target="_blank" class="py-2 px-3 inline-flex items-center justify-center mr-3 cursor-pointer text-sm tracking-wider proj-text-primary">委員介紹</a></li>
-                <li><a href="https://2022.thef2e.com/login" target="_blank" class="py-2 px-3 inline-flex items-center justify-center mr-3 cursor-pointer text-sm tracking-wider proj-text-primary">競選主張</a></li>
-                <li><a href="https://2022.thef2e.com/login" target="_blank" class="py-2 px-3 inline-flex items-center justify-center mr-3 cursor-pointer text-sm tracking-wider proj-text-primary">最新消息</a></li>
-                <li><a href="https://2022.thef2e.com/login" target="_blank" class="py-2 px-3 inline-flex items-center justify-center button mr-3 cursor-pointer text-sm tracking-wider rounded-3xl">小額捐款
-                  <img src="@/assets/img/heart.png" alt="heart" class="ml-2">
-                </a></li>
-                <li><a href="https://2022.thef2e.com/signup" target="_blank" class="py-2 px-3 inline-flex items-center justify-center button cursor-pointer text-sm tracking-wider rounded-3xl">服務信箱
-                  <img src="@/assets/img/mailbox.png" alt="mailbox" class="ml-2">
-                </a></li>
-              </ul>
-            </li> -->
-            <!-- <li><a href="#!">Pricing</a></li>
-            <li><a href="#!">Contact</a></li> -->
         </ul>
-        <!-- <ul class="nav-list">
-          <li><a href="https://2022.thef2e.com/login" target="_blank" class="py-2 px-3 inline-flex items-center justify-center mr-3 cursor-pointer text-sm tracking-wider proj-text-primary">委員介紹</a></li>
-          <li><a href="https://2022.thef2e.com/login" target="_blank" class="py-2 px-3 inline-flex items-center justify-center mr-3 cursor-pointer text-sm tracking-wider proj-text-primary">競選主張</a></li>
-          <li><a href="https://2022.thef2e.com/login" target="_blank" class="py-2 px-3 inline-flex items-center justify-center mr-3 cursor-pointer text-sm tracking-wider proj-text-primary">最新消息</a></li>
-          <li><a href="https://2022.thef2e.com/login" target="_blank" class="py-2 px-3 inline-flex items-center justify-center button mr-3 cursor-pointer text-sm tracking-wider rounded-3xl">小額捐款
-            <img src="@/assets/img/heart.png" alt="heart" class="ml-2">
-          </a></li>
-          <li><a href="https://2022.thef2e.com/signup" target="_blank" class="py-2 px-3 inline-flex items-center justify-center button cursor-pointer text-sm tracking-wider rounded-3xl">服務信箱
-            <img src="@/assets/img/mailbox.png" alt="mailbox" class="ml-2">
-          </a></li>
-        </ul> -->
-      </nav>
-    </div>
+        <div class="menu-toggle" @click="toggleMenu"  :class="{ 'open': isOpen}">
+          <div class="hamburger"></div>
+        </div>
+      </div>
+    </nav>
   </header>
 </template>
 <script>
 import { ref } from 'vue'
 export default({
   setup () {
-    const isOpen = ref(true)
+    const isOpen = ref(false)
     const toggleMenu = () => {
       isOpen.value = !isOpen.value
     }
@@ -88,153 +63,139 @@ header {
   }
 }
 
-.navigation {
-  height: 70px;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 99;
+img {
+  display: block;
+  // margin: 0 auto;
 }
 
-.brand {
-  float: left;
-  line-height: 70px;
-  font-size: 1.4em;
-  padding-left: 20px;
- }
+nav {
+  // color: #EBEBD3;
+  // padding: 1em 0;
+  position: relative;
+}
 
-.brand a {
+nav::after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
+.logo {
+  float: left;
+  font-size: 1em;
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.logo span {
+  font-weight: 300;
+}
+
+.site-nav {
+  // color: white;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: #7d6035;
+  height: 0px;
+  overflow: hidden;
+  // width: 100%;
+  color: white;
+  @media screen and (min-width: 1024px) {
+    color: #7d6035;
+  }
+}
+
+.site-nav--open {
+  height: auto;
+}
+
+.site-nav li {
+  border-bottom: 1px solid #beaf9a;
+}
+
+.site-nav li:last-child {
+  border-bottom: none;
+}
+
+.site-nav link {
+  color: white;
   text-decoration: none;
   text-transform: uppercase;
 }
 
-nav {
-  float: right;
+.site-nav--icon {
+  display: inline-block;
+  font-size: 1.5em;
+  margin-right: 1em;
+  width: 1.1em;
+  text-align: right;
+  color: rgba(255,255,255,0.45);
 }
 
-nav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-nav ul li {
-  float: left;
-  position: relative;
-}
-
-nav ul li a {
-  // display: block;
-  color: #7d6035;
-  // padding: 0 20px;
-  text-decoration: none;
-  // line-height: 70px;
-}
-
-nav ul li a:hover {
-  color: rgba(125, 96, 53, 50%);
-  transition: .4s;
-}
-
-nav ul li a:not(:only-child):after {
-  padding-left: 4px;
-  content: '  ▾'; }
-
-nav ul li ul li {
-  min-width: 160px;
-  }
-
-nav ul li ul li a {
-  padding: 15px;
-  line-height: 20px;
-}
-
-.nav-dropdown {
+.menu-toggle {
+  padding: 1em;
   position: absolute;
-  z-index: 1;
-  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
-  display: none;  }
-
-/* Mobile Hamburger Menu */
-
-.nav-mobile {
-  display: none;
-  height: 70px;
-  width: 70px;
-  position: absolute;
-  top: 0;
+  top: 50%;
+  transform: translateY(-50%);
   right: 0;
+  cursor: pointer;
 }
 
-/* Media Query for Navigation */
+.hamburger,
+.hamburger::before,
+.hamburger::after{
+  content: '';
+  display: block;
+  background: #ebebd3;
+  height: 3px;
+  width: 25px;
+  border-radius: 3px;
+  transition: all ease-in-out 500ms;
+}
 
-@media only screen and (max-width: 800px) {
+.hamburger::before {
+  transform: translatey(-7px);
+}
 
-  .nav-mobile {
-    display: block;
-  }
+.hamburger::after {
+  transform: translatey(4px);
+}
 
-  nav {
-    width: 100%;
-    padding: 0 15px;
-  }
-  
-  nav ul {
+.open .hamburger {
+  transform: rotate(45deg);
+}
+
+.open .hamburger::before {
+  opacity: 0;
+}
+
+.open .hamburger::after {
+  transform: translatey(-3px) rotate(-90deg);
+}
+
+@media (min-width: 1024px) {
+  .menu-toggle {
     display: none;
   }
-  
-  nav ul li {
-    float: none;
+  .site-nav {
+    height: auto;
+    position: relative;
+    background: transparent;
+    float: right;
   }
-  
-   nav ul li a {
-          padding: 15px;
-          line-height: 20px; 
+  .site-nav li {
+    display: inline-block;
+    border: none;
   }
-
-  nav ul li ul li a {
-          padding-left: 40px;
-          background-color: gray;
+  .site-nav link {
+    color: #7d6035;
   }
-  
-  .nav-dropdown {
-    position: static;
+  .site-nav--icon {
+    display: none;
   }
 }
-
-@media screen and (min-width: 800px) {
-  .nav-list {
-    display: block !important; } }
-#nav-toggle {
-  position: absolute;
-  left: 18px;
-  top: 22px;
-  cursor: pointer;
-  padding: 10px 35px 16px 0; }
-  #nav-toggle span,
-  #nav-toggle span:before,
-  #nav-toggle span:after {
-    cursor: pointer;
-    border-radius: 1px;
-    height: 4px;
-    width: 30px;
-    background: #7d6035;
-    position: absolute;
-    display: block;
-    content: '';
-    transition: all 300ms ease-in-out; }
-  #nav-toggle span:before {
-    top: -10px; }
-  #nav-toggle span:after {
-    bottom: -10px; }
-  #nav-toggle.active span {
-    background-color: transparent; }
-    #nav-toggle.active span:before, #nav-toggle.active span:after {
-      top: 0; }
-    #nav-toggle.active span:before {
-      transform: rotate(45deg); }
-    #nav-toggle.active span:after {
-      transform: rotate(-45deg); }
-
-
 </style>

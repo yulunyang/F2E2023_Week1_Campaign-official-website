@@ -60,7 +60,7 @@
         </div>
       </div>
     </div>
-    <div class="">
+    <div data-aos="fade-right" data-aos-offset="200">
       <img src="@/assets/img/cat8.png" alt="">
     </div>
   </div>

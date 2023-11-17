@@ -5,16 +5,16 @@
         <img src="@/assets/img/label1.png" alt="">
       </div>
       <div class="flex-1 relative">
-        <div class="absolute cat1">
+        <div class="absolute cat1" data-aos="fade-right" data-aos-offset="200">
           <img src="@/assets/img/cat1.png" alt="">
         </div>
-        <div class="absolute cat2">
+        <div class="absolute cat2"  data-aos-delay="500" data-aos="fade-left" data-aos-offset="200">
           <img src="@/assets/img/cat2.png" alt="">
         </div>
-        <div class="absolute cat3">
+        <div class="absolute cat3"  data-aos-delay="1000" data-aos="fade-right" data-aos-offset="200">
           <img src="@/assets/img/cat3.png" alt="">
         </div>
-        <div class="absolute people1">
+        <div class="absolute people1"  data-aos-delay="1500" data-aos="fade-up" data-aos-offset="200">
           <img src="@/assets/img/people1.png" alt="">
         </div>
       </div>
@@ -80,6 +80,7 @@ export default({
       max-width: 35%;
       right: 10%;
       bottom: 0;
+      max-width: 60%;
     }
   }
 }

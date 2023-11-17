@@ -10,7 +10,7 @@
           <li class="proj-text-primary font-black mb-3"><span class="proj-text-fourth">合作動物醫院</span>：目前已有和超過 200 家動物醫院進行初步的合作討論</li>
         </ul>
       </div>
-      <div class="w-full md:w-1/4">
+      <div class="w-full md:w-1/4" data-aos="fade-left" data-aos-offset="200">
         <img src="@/assets/img/section3_1.png" alt="">
       </div>
     </div>
@@ -20,7 +20,7 @@
       </div>
     </div>
     <div class="item2 flex flex-wrap mb-12 justify-center items-center">
-      <div class="w-full md:w-1/4 order-2 md:order-1">
+      <div class="w-full md:w-1/4 order-2 md:order-1" data-aos="fade-right" data-aos-offset="200">
         <img src="@/assets/img/section3_2.png" alt="">
       </div>
       <div class="w-full md:w-3/4 flex justify-end order-1 md:order-2">
@@ -50,8 +50,8 @@
           <li class="proj-text-primary font-black mb-3"><span class="proj-text-fourth">製作教育資料</span>：出版寵物飼養手冊、影片和線上課程，讓所有有意飼養寵物的家庭都能輕鬆取得正確的知識</li>
         </ul>
       </div>
-      <div class="w-full md:w-1/4">
-          <img src="@/assets/img/section3_3.png" alt="">
+      <div class="w-full md:w-1/4" data-aos="fade-left" data-aos-offset="200">
+        <img src="@/assets/img/section3_3.png" alt="">
       </div>
     </div>
   </div>
