@@ -8,13 +8,13 @@
         <div class="absolute cat1" data-aos="fade-right" data-aos-offset="200">
           <img src="@/assets/img/cat1.png" alt="">
         </div>
-        <div class="absolute cat2"  data-aos-delay="500" data-aos="fade-left" data-aos-offset="200">
+        <div class="absolute cat2"  data-aos-delay="200" data-aos="fade-left" data-aos-offset="200">
           <img src="@/assets/img/cat2.png" alt="">
         </div>
-        <div class="absolute cat3"  data-aos-delay="1000" data-aos="fade-right" data-aos-offset="200">
+        <div class="absolute cat3"  data-aos-delay="400" data-aos="fade-right" data-aos-offset="200">
           <img src="@/assets/img/cat3.png" alt="">
         </div>
-        <div class="absolute people1"  data-aos-delay="1500" data-aos="fade-up" data-aos-offset="200">
+        <div class="absolute people1" >
           <img src="@/assets/img/people1.png" alt="">
         </div>
       </div>
@@ -39,18 +39,22 @@ export default({
   background-size: cover;
   @media screen and (max-width: 1440px) {
     height: auto;
+    background-position: center, center;
   }
   .label1 {
-    // width: 70%;
     max-width: 10%;
-    // img {
-    //   width: 70%;
-    // }
+    @media screen and (max-width: 768px) {
+      max-width: 30%;
+    }
   }
   .cat1 {
     left: 8%;
     top: 5%;
     max-width: 15%;
+    @media screen and (max-width: 1440px) {
+      left: 8%;
+      top: 30%;
+    }
     // img {
     //   width: 60%;
     // }
@@ -59,6 +63,10 @@ export default({
     left: 35%;
     top: 8%;
     max-width: 15%;
+    @media screen and (max-width: 1440px) {
+      left: 35%;
+      top: 35%;
+    }
     // img {
     //   width: 60%;
     // }
@@ -67,9 +75,10 @@ export default({
     left: 20%;
     top: 35%;
     max-width: 25%;
-    // img {
-    //   width: 60%;
-    // }
+    @media screen and (max-width: 1440px) {
+      left: 15%;
+      top: 40%;
+    }
   }
   .people1 {
     right: 0;
@@ -80,7 +89,7 @@ export default({
       max-width: 35%;
       right: 10%;
       bottom: 0;
-      max-width: 60%;
+      max-width: 100%;
     }
   }
 }
