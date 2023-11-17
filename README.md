@@ -9,7 +9,7 @@
 設計師(稿)的詳細資料 [連結](https://www.figma.com/file/flMouo0BQNyQ6Nk8JDrPWA/F2E_2023?type=design&node-id=1-2&mode=design&t=bQ0OMyXyQPvJPG6Z-0).
 
 ### Demo(最小寬度768px)
-https://yulunyang.github.io/F2E_Week1_Campaign_website/
+[https://yulunyang.github.io/F2E_Week1_Campaign-official-website/](https://yulunyang.github.io/F2E_Week1_Campaign-official-website/)
 
 ### 使用技術
 1. Vue Cli
