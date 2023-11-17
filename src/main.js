@@ -8,11 +8,12 @@ import '@/assets/main.scss'
 import { gsap, ScrollTrigger, Draggable, MotionPathPlugin, TextPlugin } from "gsap/all";
 import AOS from 'aos'
 import 'aos/dist/aos.css'
-
+import VueFullPage from 'vue-fullpage.js'
+import 'fullpage.js/dist/fullpage.min.css'
 // don't forget to register plugins
 gsap.registerPlugin(gsap, ScrollTrigger, Draggable, MotionPathPlugin, TextPlugin)
 
 export const app = createApp(App)
 app.AOS = new AOS.init()
 
-app.use(store).use(router).use(AOS).mount('#app')
+app.use(store).use(router).use(AOS).use(VueFullPage).mount('#app')

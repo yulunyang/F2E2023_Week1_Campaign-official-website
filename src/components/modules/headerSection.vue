@@ -1,5 +1,5 @@
 <template>
-  <header class="header fixed top-0 left-0 w-full z-50 proj-text-primary">
+  <header class="header fixed top-0 left-0 w-full z-50 proj-text-primary shadow-lg">
     <nav class="container mx-auto py-3">
       <div class="flex justify-between items-center">
         <div class="flex items-center px-3">
